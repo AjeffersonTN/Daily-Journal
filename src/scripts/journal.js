@@ -3,12 +3,31 @@
     represents a journal entry about what you learned today
 */
 const objectsJournalEntry = {
-    dayOfWeek: "monday",
-    concepts: "functions and objects",
-    mood: "chill",
-    levelOfComprehension: "need practice",     
+    dayOfWeek: "Monday",
+    concepts: "JavaScript Functions",
+    mood: "Chill",
+    levelOfComprehension: "Need Practice",     
+}
+const objectsJournalEntry1 = {
+    dayOfWeek: "Tuesday",
+    concepts: "Querying the DOM",
+    mood: "Happy",
+    levelOfComprehension: "Need Practice",     
+}
+const objectsJournalEntry2 = {
+    dayOfWeek: "Wednesday",
+    concepts: "JavaScript Objects",
+    mood: "Chill",
+    levelOfComprehension: "Need Practice",     
+}
+const objectsJournalEntry3 = {
+    dayOfWeek: "Thursday",
+    concepts: "Git Hub Workflow",
+    mood: "Sad",
+    levelOfComprehension: "Understand",     
 }
 
+
 let dailyEntries = []
-dailyEntries.push(objectsJournalEntry);
+dailyEntries.push(objectsJournalEntry, objectsJournalEntry1, objectsJournalEntry2, objectsJournalEntry3);
 console.log(dailyEntries)
