@@ -6,27 +6,29 @@
     <title>Daily Journal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/journal.css" />
-    
 </head>
 <body>
     <h1>Daily Journal</h1>
     <form action="">
         <fieldset class="form" >
             <label for="journalDate">Date of Entry</label>
-            <input type="date" name="journalDate" id=""journalDate>
+            <input type="date" name="journalDate" class="inputField" id="inputDate">
             <label for="conceptsCovered" id="concepts">Concepts Covered</label>
-            <input type="text">
+            <input type="text" class="inputField" id="conceptsCovered">
             <label for="journalEntry">Journal Entry</label>
-            <textarea rows="10" cols="70"></textarea>
+            <textarea rows="10" cols="70" class="inputField" id="journalEntry"></textarea>
             <label for="moodForTheDay">Mood For The Day</label>
-            <select name="moods" id="moodForTheDay">
+            <select name="moods" class="inputField" id="dailyMood">
                 <option value="Sad">Sad</option>
                 <option value="Happy">Happy</option>
                 <option value="Chill">Chill</option>
             </select>
-            <button>Record Journal Entry</button>
+            <button class="inputField" id="recordButton">Record Journal Entry</button>
         </fieldset>
     </form>
+    <article class="entryLog">
+
+    </article>
 <script src="./scripts/journal.js"></script>
 </body>
 </html>

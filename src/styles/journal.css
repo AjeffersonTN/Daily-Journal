@@ -7,9 +7,15 @@
     border: none;
 }
 label{
-    border: 1px double black;
-    background-color: beige;       
+    background-color: rgb(78, 74, 74);
 }
 body{
     background-color: rgb(78, 74, 74);
+}
+.inputField{
+    border: 2px solid black;
+}
+#recordButton{
+    background-color: red;
+    font-weight: bold;
 }
