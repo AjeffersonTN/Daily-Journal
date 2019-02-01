@@ -1,3 +1,5 @@
+API.getJournalEntries().then(response => loopTheEntries(response))
+/* Journal 4 code
 fetch(`http://localhost:3000/entries`)
     .then(response => response.json())
     .then(entries => {
@@ -32,6 +34,7 @@ let makeJournalEntryComponent = (currentOne) => {
 let displayOnPage = (putItOn) => {
     putOnDOM.innerHTML += putItOn;
 }
+*/
 
 /* Journal 3 Code
 
