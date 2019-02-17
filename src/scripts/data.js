@@ -1,12 +1,24 @@
-const API = {
-    getJournalEntries () {//a function on an object is a method
-        return fetch("http://localhost:3000/entries")
-        //the fetch passes the information to the .then which parses it then pasess it to the .then on the journal.js
-            .then(response => response.json())
-    }
-}
+const dataManager = {
 
-/* Step before API Acces Module 
+ getJournalEntries: () => {
+        return fetch("http://localhost:8088/entries")
+            .then(response => response.json())
+    },
+
+    postToApi: function (createObject) {
+        fetch("http://localhost:8088/entries", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(createObject)
+    });
+
+    }}
+
+
+
+/* Step before API Acces Module
 //this code fetches and calls the loopTheEntries function
 fetch(`http://localhost:3000/entries`)
     .then(response => response.json())
@@ -17,4 +29,3 @@ fetch(`http://localhost:3000/entries`)
 */
 // objectWithGetterMethod.methodToGetData().then(functionThatRendersData)
 // API.getJournalEntries().then(loopTheEntries(reponse))
-

@@ -1,4 +1,6 @@
-API.getJournalEntries().then(response => loopTheEntries(response))
+dataManager.getJournalEntries().then(response => {
+    // loopTheEntries(response)
+})
 /* Journal 4 code
 fetch(`http://localhost:3000/entries`)
     .then(response => response.json())
@@ -61,7 +63,7 @@ let journalEntries  = [
     },
 
     {
-        date: "01/12/18",
+          date: "01/12/18",
         concepts: "Git Hub Workflow",
         entry: "Need Practice",
         mood: "Sad",

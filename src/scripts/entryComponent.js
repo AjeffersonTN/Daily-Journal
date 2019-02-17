@@ -1,14 +1,18 @@
  //function to iterate over the array and invoke makeJournalEntryComponent
-function loopTheEntries (entries){
-    for (let i = 0; i < entries.length; i++) {
-    let currentOne = entries[i];
-    let returnFromMAGA = makeJournalEntryComponentObject.makeJournalEntryComponent(currentOne) //had to capture the input by setting equal to a variable in order to utlize
-    displayOnPageObject.displayOnPage(returnFromMAGA)
+// function loopTheEntries (entries){
+//     entries.forEach(currentOne => {
+//         let returnFromMAGA = makeJournalEntryComponentObject.makeJournalEntryComponent(currentOne) //had to capture the input by setting equal to a variable in order to utlize
+//         displayOnPageObject.displayOnPage(returnFromMAGA)
+//     });
+    // for (let i = 0; i < entries.length; i++) {
+    // let currentOne = entries[i];
+    // let returnFromMAGA = makeJournalEntryComponentObject.makeJournalEntryComponent(currentOne) //had to capture the input by setting equal to a variable in order to utlize
+    // displayOnPageObject.displayOnPage(returnFromMAGA)
     //used prior to making the displayOnPageObject
     // displayOnPage(returnFromMAGA)
 
 
-}}
+// }
 
 //Function for creating the HTML representation
 makeJournalEntryComponentObject ={

@@ -12,18 +12,35 @@
     <form action="">
         <fieldset class="form" >
             <label for="journalDate">Date of Entry</label>
-            <input type="date" name="journalDate" class="inputField" id="inputDate">
+            <input type="date" name="journalDate" class="inputField" id="inputDate" value="">
             <label for="conceptsCovered" id="concepts">Concepts Covered</label>
-            <input type="text" class="inputField" id="conceptsCovered">
+            <input type="text" class="inputField" id="conceptsCovered" value="">
             <label for="journalEntry">Journal Entry</label>
-            <textarea rows="10" cols="70" class="inputField" id="journalEntry"></textarea>
+            <textarea rows="10" cols="70" class="inputField" id="journalEntry" value="" ></textarea>
             <label for="moodForTheDay">Mood For The Day</label>
-            <select name="moods" class="inputField" id="dailyMood">
+            <select name="moods" id="dailyMood">
                 <option value="Sad">Sad</option>
                 <option value="Happy">Happy</option>
-                <option value="Chill">Chill</option>
+                <option value="Ok">Ok</option>
             </select>
-            <button class="inputField" id="recordButton">Record Journal Entry</button>
+            <button id="recordButton" type="button">Record Journal Entry</button>
+        </fieldset>
+        <fieldset id="radioMenu">
+            <legend id="legend">Filter Journal Entries by Mood</legend>
+            <div id="radioButtons">
+                <input type="radio" id="sadRadioButton"
+                 name="moodFilter" value="sad" checked>
+                <label for="sadRadioButton">Sad</label>
+
+                <input type="radio" id="happyRadioButton"
+                 name="moodFilter" value="happy">
+                <label for="happyRadioButton">Happy</label>
+
+                <input type="radio" id="chillRadioButton"
+                 name="moodFilter" value="ok">
+                <label for="chillRadioButton">Ok</label>
+              </div>
+
         </fieldset>
     </form>
     <article class="entryLog">
@@ -33,5 +50,6 @@
     <script src="./scripts/entryComponent.js"></script>
     <script src="./scripts/entriesDOM.js"></script>
     <script src="./scripts/journal.js"></script>
+
 </body>
 </html>

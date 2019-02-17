@@ -15,7 +15,19 @@ body{
 .inputField{
     border: 2px solid black;
 }
+#dailyMode{
+    border: 2px solid black;
+}
 #recordButton{
     background-color: red;
     font-weight: bold;
+}
+
+#legend{
+    font-weight: bold;
+    font-size: 20px;
+}
+#radioMenu{
+    margin-top: 20px;
+    padding: 10px;
 }

@@ -1,19 +1,60 @@
 {
-  "posts": [
+  "entries": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "concept": "JavaScript Functions",
+      "date": "01/12/18",
+      "entry": "Need Practice",
+      "mood": "Chill"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "concept": "sffs",
+      "date": "",
+      "entry": "",
+      "mood": "Sad",
+      "id": 2
+    },
+    {
+      "concept": "sff",
+      "date": "",
+      "entry": "",
+      "mood": "Sad",
+      "id": 3
+    },
+    {
+      "concept": "",
+      "date": "",
+      "entry": "sgrgrg",
+      "mood": "Sad",
+      "id": 4
+    },
+    {
+      "concept": "thth",
+      "date": "",
+      "entry": "thth",
+      "mood": "Sad",
+      "id": 5
+    },
+    {
+      "concept": "thth",
+      "date": "",
+      "entry": "thth",
+      "mood": "Sad",
+      "id": 6
+    },
+    {
+      "concept": "",
+      "date": "",
+      "entry": "jk",
+      "mood": "Happy",
+      "id": 7
+    },
+    {
+      "concept": "",
+      "date": "",
+      "entry": "jkfdfg",
+      "mood": "Ok",
+      "id": 8
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
